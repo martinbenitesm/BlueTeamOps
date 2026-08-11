@@ -4,7 +4,7 @@
 
 ---
 
-# 🎯 Sobre el proyecto
+# Sobre el proyecto
 
 **BlueTeamOps** es un repositorio personal dedicado a documentar la resolución de laboratorios y desafíos prácticos de ciberseguridad defensiva.
 
@@ -20,7 +20,7 @@ El objetivo es mantener una documentación organizada de los procedimientos util
 
 ---
 
-# 🔍 Áreas de enfoque
+# Áreas de enfoque
 
 Los laboratorios y writeups se organizan alrededor de diferentes áreas de la ciberseguridad defensiva:
 
@@ -37,7 +37,7 @@ Los laboratorios y writeups se organizan alrededor de diferentes áreas de la ci
 
 ---
 
-# 🗂️ Plataformas
+# Plataformas
 
 | Plataforma | Enfoque |
 |---|---|
@@ -45,11 +45,10 @@ Los laboratorios y writeups se organizan alrededor de diferentes áreas de la ci
 | 🌐 TryHackMe | Cybersecurity Labs, SOC, Defensive Security |
 | 🖥️ Hack The Box | Pentesting, Detection, DFIR y Security Labs |
 | 🛡️ Blue Team Labs Online | Blue Team, SOC, DFIR y Threat Hunting |
-| 🔎 Otros | Laboratorios y recursos de entrenamiento |
 
 ---
 
-# 🧰 Herramientas
+# Herramientas
 
 Dependiendo del laboratorio, pueden utilizarse herramientas como:
 
