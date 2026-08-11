@@ -2,23 +2,19 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=40&duration=3000&pause=1000&color=00BFFF&center=true&vCenter=true&width=1000&height=80&lines=🛡️+Welcome+to+BlueTeamOps+🛡️;🧪+Labs+/+Analysis+🧪;👮‍♂️+DFIR+%7C+SOC+Operations+👮‍♂️" />
 </p>
 
----
-
 # Sobre el proyecto
 
-**BlueTeamOps** es un repositorio personal dedicado a documentar la resolución de laboratorios y desafíos prácticos de ciberseguridad defensiva.
+BlueTeamOps es un repositorio personal dedicado a documentar la resolución de laboratorios y desafíos prácticos de ciberseguridad defensiva.
 
 Aquí se recopilan writeups realizados en plataformas de entrenamiento como:
 
-- 🧪 [CyberDefenders](https://cyberdefenders.org/)
-- 🌐 [TryHackMe](https://tryhackme.com/)
-- 🖥️ [Hack The Box](https://www.hackthebox.com/)
-- 🛡️ Blue Team Labs Online
-- 🔎 Otras plataformas y laboratorios de ciberseguridad
+- CyberDefenders
+- TryHackMe
+- Hack The Box
+- Blue Team Labs Online
+- Otras plataformas y laboratorios de ciberseguridad
 
 El objetivo es mantener una documentación organizada de los procedimientos utilizados para **investigar, detectar, analizar y responder ante diferentes escenarios de seguridad**.
-
----
 
 # Áreas de enfoque
 
@@ -35,18 +31,14 @@ Los laboratorios y writeups se organizan alrededor de diferentes áreas de la ci
 - 🧠 **Threat Intelligence** — Investigación y análisis de información relacionada con amenazas.
 - 📚 **Defensive Security Research** — Investigación y experimentación en seguridad defensiva.
 
----
-
 # Plataformas
 
 | Plataforma | Enfoque |
 |---|---|
-| 🧪 CyberDefenders | DFIR, SOC, Threat Hunting, Malware Analysis |
-| 🌐 TryHackMe | Cybersecurity Labs, SOC, Defensive Security |
-| 🖥️ Hack The Box | Pentesting, Detection, DFIR y Security Labs |
-| 🛡️ Blue Team Labs Online | Blue Team, SOC, DFIR y Threat Hunting |
-
----
+| CyberDefenders | DFIR, SOC, Threat Hunting, Malware Analysis |
+| TryHackMe | Cybersecurity Labs, SOC, Defensive Security |
+| Hack The Box | Pentesting, Detection, DFIR y Security Labs |
+| Blue Team Labs Online | Blue Team, SOC, DFIR y Threat Hunting |
 
 # Herramientas
 
