@@ -36,20 +36,34 @@ complete the lab analysis.
 familia de malware que causa el tráfico de red anormal?**
 
 Subimos el hash a VirusTotal y vamos a la sección de “Relations”:
+
+![Descripción de la imagen](./capturas/captura0001.png)
+
 Navegamos hasta el fondo y vamos a “Graph Summary”:
+
+![Descripción de la imagen](./capturas/captura0002.png)
+
 Damos clic al icono central del grafo.
+
+![Descripción de la imagen](./capturas/captura0003.png)
+
 Las “Collections” son conjuntos de muestras analizadas por investigadores de VirusTotal
 o de la comunidad. Si una muestra pertenece a una campaña o familia conocida,
 normalmente la colección lo indica.
 En la captura se ven varias colecciones relacionadas:
-• solarmarker
-• Introducing The Jupyter Infostealer/Backdoor
-• Dropper / Loader
-• How to Detect Yellow Cockatoo Remote Access Trojan
-• Laboratorio de rata amarilla
-• Jupyter Malware
+
+* solarmarker
+* Introducing The Jupyter Infostealer/Backdoor
+* Dropper / Loader
+* How to Detect Yellow Cockatoo Remote Access Trojan
+* Laboratorio de rata amarilla
+* Jupyter Malware
+
 La colección “How to Detect Yellow Cockatoo Remote Access Trojan” describe una
 campaña del “Yellow Cockatoo RAT”. Al abrirla, el artículo menciona lo siguiente:
+
+![Descripción de la imagen](./capturas/captura0004.png)
+
 Nos dice exactamente a que familia pertenece.
 
 **Respuesta:** `Yellow Cockatoo RAT`
@@ -65,6 +79,8 @@ Para ver con que nombres se subió este archivo vamos a la sección de “Detail
 hasta la parte de “Names”. El primer archivo DLL que aparece es el nombre de archivo
 común utilizado por este malware.
 
+![Descripción de la imagen](./capturas/captura0005.png)
+
 **Respuesta:** `111bc461-1ca8-43c6-97ed-911e0e69fdf8.dll`
 
 ## Pregunta 03
@@ -76,6 +92,8 @@ marca de tiempo de compilación del malware que infectó nuestra red?**
 En la misma sección “Details” en la parte de “History” encontraremos datos horarios
 relevantes del archivo estudiado. Lo que nos importa es la de “Creation Time”.
 
+![Descripción de la imagen](./capturas/captura0006.png)
+
 **Respuesta:** `2020-09-24 18:26`
 
 ## Pregunta 04
@@ -85,7 +103,7 @@ primera vez que el malware podría ayudar a determinar cuánto tiempo podría
 haber estado el malware en el entorno antes de la detección. ¿Cuándo se envió el
 malware por primera vez a VirusTotal?**
 
-Esta prgunta se resuelve con la captura anterior, solo que la fecha que nos importa es la
+Esta pregunta se resuelve con la captura anterior, solo que la fecha que nos importa es la
 de “First Submission”.
 
 **Respuesta:** `2020-10-15 02:47`
@@ -99,9 +117,14 @@ AppData?**
 
 Buscamos en internet este caso y buscamos entre las páginas que nos salen para buscar
 información.
+
+![Descripción de la imagen](./capturas/captura0007.png)
+
 Si entramos a la cuarta opción encontraremos la información que nos piden. Nos
 ayudamos con Ctrl + F buscando con palabras de ayuda para tener una búsqueda mas
 rápida.
+
+![Descripción de la imagen](./capturas/captura0008.png)
 
 **Respuesta:** `solarmarker.dat`
 
@@ -112,6 +135,9 @@ bloquear su comunicación y evitar una mayor exfiltración de datos. ¿Qué es e
 servidor C2 con el que se comunica el malware?**
 
 Vamos a la sección de “Behavior” y vamos a la parte de “Network Communication”.
+
+![Descripción de la imagen](./capturas/captura0009.png)
+
 Aquí, encontrarás el Memory Pattern URLs. Lo que revela el servidor C2 con el que se
 comunica el malware.
 
