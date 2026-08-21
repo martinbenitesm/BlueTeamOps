@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=62&duration=3000&pause=1000&color=D117AF&center=true&vCenter=true&width=1000&height=80&lines=Tomcat+Takeover+Lab" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=68&duration=3000&pause=1000&color=D117AF&center=true&vCenter=true&width=1000&height=80&lines=Tomcat+Takeover+Lab" />
 </p>
 
 Analyze network traffic using Wireshark's custom columns, filters, and statistics to
@@ -27,6 +27,8 @@ responsable de iniciar estas solicitudes en nuestro servidor?**
 Si vamos a Estadísticas ➔ Conversaciones, vemos en la pestaña TCP que la IP 14.0.0.120
 estuvo enviando paquetes a muchísimos puertos diferentes a la maquina 10.0.0.112.
 
+![Descripción de la imagen](./capturas/captura0001.png)
+
 **Respuesta:** `14.0.0.120`
 
 ## Pregunta 02
@@ -35,6 +37,8 @@ estuvo enviando paquetes a muchísimos puertos diferentes a la maquina 10.0.0.11
 identificar el país del que se originaron las actividades del atacante?**
 
 Como tenemos la IP podemos localizarla con la herramienta web IPSHU.
+
+![Descripción de la imagen](./capturas/captura0002.png)
 
 **Respuesta:** `China`
 
@@ -45,7 +49,13 @@ del análisis activo del atacante. ¿Cuál de estos puertos proporciona acceso a
 de administración del servidor web?**
 
 Comenzamos filtrando el puerto 8080 que por defecto es el puerto alternativo HTTP.
+
+![Descripción de la imagen](./capturas/captura0003.png)
+
 Vemos bastantes solicitudes y ahora filtramos las respuestas.
+
+![Descripción de la imagen](./capturas/captura0004.png)
+
 Vemos que hubo varias solicitudes exitosas “200”, respuestas de paginas no encontradas
 “404” y la mas importante que son las de acceso no autorizado “401”. El servidor Apache
 Tomcat corriendo en el puerto 8080 responde con códigos HTTP 401 Unauthorized ante
@@ -64,6 +74,9 @@ atacante en este proceso de enumeración?**
 Analizaremos los intentos fallidos “404” porque por lo general las herramientas de
 explotación tienen estas fallas al buscar carpetas que no existen, por lo que es más
 directo encontrar su huella en un paquete con ese código.
+
+![Descripción de la imagen](./capturas/captura0005.png)
+
 Una vez filtradas las respuestas no encontradas del servidor, se seleccionó uno de los
 paquetes correspondientes desde el centro del flujo de tráfico y se reconstruyó la
 conversación utilizando la opción Follow > HTTP Stream (Seguir flujo HTTP).
@@ -72,6 +85,8 @@ solicitud enviada por el cliente. En una petición legítima, esta cabecera most
 identificador de un navegador web comercial (como Chrome, Firefox o Edge); sin
 embargo, se encontró la firma explícita de una herramienta de escaneo de seguridad en
 la cabecera User-Agent:
+
+![Descripción de la imagen](./capturas/captura0006.png)
 
 **Respuesta:** `gobuster`
 
@@ -85,6 +100,9 @@ atacante?**
 Para ver el directorio especifico que el atacante descubrió y estaba relacionado con el
 panel de administración debemos buscar en las cuales está el código 200 y analizar los
 detalles.
+
+![Descripción de la imagen](./capturas/captura0007.png)
+
 En request URI vemos que entro a la carpeta manager. En un entorno Apache Tomcat, la
 ruta /manager (que alberga el Tomcat Web Application Manager) es el corazón
 administrativo del sistema. Esta interfaz permite a los administradores iniciar, detener,
@@ -106,6 +124,8 @@ comportamiento cambia. Analizamos los detalles en la sección de Hypertext Trans
 Protocol ➔ Authorization ➔ Credentials. Ahí nos aparecerá el usuario y contraseña
 usadas por el atacante.
 
+![Descripción de la imagen](./capturas/captura0008.png)
+
 **Respuesta:** `admin:tomcat`
 
 ## Pregunta 07
@@ -116,9 +136,15 @@ este archivo malicioso a partir de los datos capturados?**
 
 Como se intento cargar un archivo debemos analizar una solicitud POST. Así que
 ponemos el siguiente filtro con la ip del atacante y solo solicitud POST.
-ip.src == 14.0.0.120 && http.request.method == POST
+
+`ip.src == 14.0.0.120 && http.request.method == POST`
+
+![Descripción de la imagen](./capturas/captura0009.png)
+
 Solo hay un paquete, así que ahí está la información que necesitamos. Damos en seguir
 secuencia HTTP y analizamos:
+
+![Descripción de la imagen](./capturas/captura0010.png)
 
 **Respuesta:** `JXQOZY.war`
 
@@ -133,12 +159,19 @@ En una reverse shell (shell inversa), el servidor víctima se conecta hacia la m
 atacante. El código hexadecimal 0x012 equivale a las banderas TCP SYN, ACK, que es
 exactamente la confirmación que el atacante envía de vuelta para aceptar esa conexión
 entrante. Aplicamos:
-ip.src == 14.0.0.120 && tcp.flags == 0x012
+
+`ip.src == 14.0.0.120 && tcp.flags == 0x012`
+
+![Descripción de la imagen](./capturas/captura0011.png)
+
 Mediante el análisis del flujo de datos de la sesión (Follow TCP Stream), se reconstruyó el
 historial de comandos ejecutados en la terminal interactiva. Se determinó que el
 atacante implementó un mecanismo de persistencia basado en la programación de
 tareas del sistema (Cron), inyectando el siguiente comando programado para su
 ejecución periódica:
+
+![Descripción de la imagen](./capturas/captura0012.png)
+
 Esta técnica permite al atacante ejecutar código malicioso de forma recurrente en un
 segundo plano, reestableciendo automáticamente el acceso no autorizado sin necesidad
 de volver a explotar la vulnerabilidad inicial de la interfaz web.
