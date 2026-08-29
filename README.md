@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=44&duration=3000&pause=1000&color=00BFFF&center=true&vCenter=true&width=1000&height=80&lines=🛡️+Welcome+to+BlueTeamOps+🛡️;🧪+Labs+/+Analysis+🧪;👮‍♂️+DFIR+%7C+SOC+Operations+👮‍♂️" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=50&duration=3000&pause=1000&color=00BFFF&center=true&vCenter=true&width=1000&height=80&lines=🛡️+Welcome+to+BlueTeamOps+🛡️;🧪+Labs+/+Analysis+🧪;👮‍♂️+DFIR+%7C+SOC+Operations+👮‍♂️" />
 </p>
 
 # Sobre el proyecto
@@ -39,49 +39,3 @@ Los laboratorios y writeups se organizan alrededor de diferentes áreas de la ci
 | TryHackMe | Cybersecurity Labs, SOC, Defensive Security |
 | Hack The Box | Pentesting, Detection, DFIR y Security Labs |
 | Blue Team Labs Online | Blue Team, SOC, DFIR y Threat Hunting |
-
-# Herramientas
-
-Dependiendo del laboratorio, pueden utilizarse herramientas como:
-
-## 🔎 Análisis de red
-- Wireshark
-- tshark
-- Zeek
-- NetworkMiner
-
-## 📊 SIEM & Logs
-- Splunk
-- Elastic Stack
-- Microsoft Sentinel
-- Kibana
-
-## 💻 DFIR
-- Autopsy
-- Volatility
-- FTK Imager
-- Eric Zimmerman Tools
-- KAPE
-
-## 🦠 Malware Analysis
-- Ghidra
-- x64dbg
-- Detect It Easy (DIE)
-- FLOSS
-- YARA
-- VirusTotal
-
-## 🔍 Threat Intelligence
-- VirusTotal
-- AbuseIPDB
-- URLScan
-- AlienVault OTX
-- MITRE ATT&CK
-
-## 🛡️ Detection & Hunting
-- Sigma
-- YARA
-- Suricata
-- Snort
-- Sysmon
-- Windows Event Logs
