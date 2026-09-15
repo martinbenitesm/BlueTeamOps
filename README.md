@@ -39,3 +39,6 @@ Los laboratorios y writeups se organizan alrededor de diferentes áreas de la ci
 | TryHackMe | Cybersecurity Labs, SOC, Defensive Security |
 | Hack The Box | Pentesting, Detection, DFIR y Security Labs |
 | Blue Team Labs Online | Blue Team, SOC, DFIR y Threat Hunting |
+| Personal | Laboratorios propios |
+
+> **Analista:** Martin Alberto Benites Marin
