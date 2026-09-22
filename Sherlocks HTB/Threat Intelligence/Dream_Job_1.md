@@ -28,49 +28,100 @@ Eres un analista junior de inteligencia de amenazas en una empresa de Cibersegur
 
 ## Tarea 02
 
-**¿Qué puerto usa SMB para operar?**
+**¿Cuándo se observó por primera vez esta operación?**
 
-**Respuesta:** `445`
+![Descripción de la imagen](./capturas/captura2.png)
+
+**Respuesta:** `September 2019`
 
 ## Tarea 03
 
-**¿Cuál es el nombre del servicio para el puerto 445 que apareció en nuestro escaneo de Nmap?**
+**Hay 2 campañas asociadas con la Operation Dream Job. Una es Operation North Star, ¿cuál es la otra?**
 
-![Descripción de la imagen](./capturas/captura11.png)
-
-**Respuesta:** `microsoft-ds`
+**Respuesta:** `Operation Interception`
 
 ## Tarea 04
 
-**¿Cuál es la 'flag' o 'switch' que podemos usar con la utilidad smbclient para 'listar' los recursos compartidos SMB disponibles en Dancing?**
+**Durante la Operation Dream Job, había dos binarios del sistema utilizados para la ejecución por proxy. Uno era Regsvr32, ¿cuál era el otro?**
 
-**Respuesta:** `-L`
+![Descripción de la imagen](./capturas/captura3.png)
+
+**Respuesta:** `Rundll32`
 
 ## Tarea 05
 
-**¿Cuántos recursos compartidos hay en Dancing?**
+**¿Qué técnica de movimiento lateral utilizó el adversario?**
 
-![Descripción de la imagen](./capturas/captura12.png)
+![Descripción de la imagen](./capturas/captura4.png)
 
-**Respuesta:** `4`
+**Respuesta:** `Internal Spearphishing`
 
 ## Tarea 06
 
-**¿Cuál es el nombre del recurso compartido al que finalmente podemos acceder con una contraseña en blanco?**
+**¿Cuál es el ID de técnica para la respuesta anterior?**
 
-**Respuesta:** `WorkShares`
+**Respuesta:** `T1534`
 
 ## Tarea 07
 
-**¿Cuál es el comando que podemos usar dentro del shell de SMB para descargar los archivos que encontramos?**
+**¿Qué Remote Access Trojan utilizó el Lazarus Group en la Operation Dream Job?**
 
-![Descripción de la imagen](./capturas/captura13.png)
+![Descripción de la imagen](./capturas/captura5.png)
 
-**Respuesta:** `get`
+**Respuesta:** `DRATzarus`
 
+## Tarea 08
 
-## Envía la flag ubicada en el recurso compartido SMB
+**¿Qué técnica utilizó el malware para la ejecución?**
 
-![Descripción de la imagen](./capturas/captura14.png)
+![Descripción de la imagen](./capturas/captura6.png)
 
-**Respuesta:** `5f61c10dffbc77a704d76016a22f1664`
+**Respuesta:** `Native API`
+
+## Tarea 09
+
+**¿Qué técnica utilizó el malware para evitar la detección en un sandbox?**
+
+![Descripción de la imagen](./capturas/captura7.png)
+
+**Respuesta:** `Time Based Checks`
+
+## Tarea 10
+
+**Para responder las preguntas restantes, utiliza VirusTotal y consulta el archivo IOCs.txt. ¿Cuál es el nombre asociado con el primer hash proporcionado en el archivo IOC?**
+
+![Descripción de la imagen](./capturas/captura8.png)
+
+**Respuesta:** `IEXPLORE.EXE`
+
+## Tarea 11
+
+**¿Cuándo se creó por primera vez el archivo asociado con el segundo hash en el IOC?**
+
+![Descripción de la imagen](./capturas/captura9.png)
+
+**Respuesta:** `2020-05-12 19:26:17`
+
+## Tarea 12
+
+**¿Cuál es el nombre del archivo de ejecución padre asociado con el segundo hash en el IOC?**
+
+![Descripción de la imagen](./capturas/captura10.png)
+
+**Respuesta:** `BAE_HPC_SE.iso`
+
+## Tarea 13
+
+**Examina el tercer hash proporcionado. ¿Cuál es el nombre de archivo probablemente utilizado en la campaña que se alinea con las tácticas conocidas del adversario?**
+
+![Descripción de la imagen](./capturas/capturas11.png)
+
+**Respuesta:** `Salary_Lockheed_Martin_job_opportunities_confidential.doc`
+
+## Tarea 14
+
+**¿Cuál URL maliciosa en las URLs contactadas se utiliza para obtener un archivo .docx secundario?**
+
+![Descripción de la imagen](./capturas/captura12.png)
+
+**Respuesta:** `https://markettrendingcenter.com/lk_job_oppor.docx`
