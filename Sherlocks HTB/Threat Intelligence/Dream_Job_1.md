@@ -22,6 +22,8 @@ Eres un analista junior de inteligencia de amenazas en una empresa de Cibersegur
 
 **¿Quién llevó a cabo la Operation Dream Job?**
 
+Buscamos en Mitre Att&ck información de esta operación.
+
 ![Descripción de la imagen](./capturas/captura1.png)
 
 **Respuesta:** `Lazarus Group`
