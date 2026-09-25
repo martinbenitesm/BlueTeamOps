@@ -1,0 +1,9 @@
+2026-08-10 09:15:01 | FAILED_LOGIN | user=admin | ip=190.10.20.5
+2026-08-10 09:15:03 | FAILED_LOGIN | user=admin | ip=190.10.20.5
+2026-08-10 09:15:05 | FAILED_LOGIN | user=root | ip=190.10.20.5
+2026-08-10 09:15:07 | FAILED_LOGIN | user=admin | ip=190.10.20.5
+2026-08-10 09:15:09 | FAILED_LOGIN | user=root | ip=190.10.20.5
+2026-08-10 09:15:11 | FAILED_LOGIN | user=admin | ip=190.10.20.5
+2026-08-10 09:20:00 | SUCCESS_LOGIN | user=mbenites | ip=192.168.1.15
+2026-08-10 10:02:11 | FAILED_LOGIN | user=mbenites | ip=192.168.1.15
+2026-08-10 10:02:40 | SUCCESS_LOGIN | user=mbenites | ip=192.168.1.15
