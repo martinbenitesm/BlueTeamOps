@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=40&duration=3000&pause=1000&color=00BFFF&center=true&vCenter=true&width=1000&height=80&lines=SIEM+Log+Monitoring+and+Threat+Detection" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=40&duration=3000&pause=1000&color=27F5CC&center=true&vCenter=true&width=1000&height=80&lines=SIEM+Log+Monitoring+and+Threat+Detection" />
 </p>
 
 ## Resumen del Proyecto
