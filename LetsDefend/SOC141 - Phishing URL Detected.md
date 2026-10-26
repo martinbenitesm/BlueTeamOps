@@ -39,3 +39,5 @@ Es una URL maliciosa según VirusTotal.
 # ¿Alguien ha accedido a la IP/URL/Dominio?
 
 Si, la IP 172.16.17.49.
+
+**VEREDICTO:** `TRUE POSITIVE`
