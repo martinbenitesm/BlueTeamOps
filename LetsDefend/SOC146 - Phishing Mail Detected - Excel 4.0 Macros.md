@@ -91,3 +91,5 @@ Podemos deducir que este correo fue abierto.
 # Conclusión
 
 Como resultado del análisis del sandbox del archivo de Excel adjunto al correo electrónico, se observa que es dañino. En el análisis del sandbox, se obtienen direcciones c2. Cuando se buscan las direcciones c2 a través de la gestión de registros, se observa que hay acceso, por lo tanto, se entiende que el archivo de Excel malicioso se ejecuta. Cuando se determina la dirección de origen en Log Management y se busca en Endpoint Management, se observa que es un dispositivo LarsPRD. Cuando se examinan el Historial del Navegador y las Conexiones de Red del dispositivo LarsPRD, se ha aclarado que el dispositivo LarsPRD se comunica con direcciones maliciosas. Cuando se examina el Historial de CMD de LarsPRD, se observa que se ejecuta el comando regsvr32, que está incluido en las macros de Excel 4.0.
+
+**VEREDICTO:** `TRUE POSITIVE`
